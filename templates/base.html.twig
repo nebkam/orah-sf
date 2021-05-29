@@ -56,7 +56,7 @@
 
 <ul id="nav">
 	<li id="oNama">
-		<a href="/index.rs.php">O nama</a>
+		<a href="{{ path('app_common_aboutus') }}">O nama</a>
 	</li>
 	<li id="sorte" class="hasSub">
 		<a href="#">Sortimenti</a>
@@ -135,19 +135,7 @@
 	</li>
 </ul>
 
-<div id="pesma">
-	Gde god nadješ zgodno mesto,
-	<br/>Tu drvo posadi!
-	<br/>A drvo je blagodarno
-	<br/>Pa će da nagradi.
-	<br/>
-	<br/>Nagradiće izobiljem
-	<br/>Hlada, roda svog
-	<br/>Nagradiće bilo tebe
-	<br/>Bilo brata tvog.
-	<br/>
-	<br/>Čika Jova Zmaj
-</div>
+{% block main_content %}{% endblock %}
 
 <ul id="copy">
 	<li>
