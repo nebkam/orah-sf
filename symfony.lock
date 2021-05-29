@@ -1,4 +1,10 @@
 {
+    "nette/neon": {
+        "version": "v3.2.2"
+    },
+    "nette/utils": {
+        "version": "v3.2.2"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -163,6 +169,30 @@
     },
     "symfony/yaml": {
         "version": "v5.2.9"
+    },
+    "symplify/autowire-array-parameter": {
+        "version": "v9.3.15"
+    },
+    "symplify/composer-json-manipulator": {
+        "version": "v9.3.15"
+    },
+    "symplify/console-package-builder": {
+        "version": "v9.3.15"
+    },
+    "symplify/easy-testing": {
+        "version": "v9.3.15"
+    },
+    "symplify/package-builder": {
+        "version": "v9.3.15"
+    },
+    "symplify/smart-file-system": {
+        "version": "v9.3.15"
+    },
+    "symplify/symfony-static-dumper": {
+        "version": "v9.3.15"
+    },
+    "symplify/symplify-kernel": {
+        "version": "v9.3.15"
     },
     "twig/extra-bundle": {
         "version": "v3.3.1"
