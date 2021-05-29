@@ -11,6 +11,6 @@ class FooController extends AbstractController
 	#[Route('/', methods: ['GET'])]
 	public function foo(): Response
 		{
-		return new Response('Hello World');
+		return $this->render('index.html.twig');
 		}
 	}
