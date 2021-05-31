@@ -20,6 +20,18 @@ class SerbianController extends AbstractController
 		return $this->render('serbian/about_us.html.twig');
 		}
 
+	#[Route('/email', methods: ['GET'])]
+	public function email(): Response
+		{
+		return $this->render('serbian/email.html.twig');
+		}
+
+	#[Route('/posta', methods: ['GET'])]
+	public function mail(): Response
+		{
+		return $this->render('serbian/mail.html.twig');
+		}
+
 	#[Route('/kontakt', methods: ['GET'])]
 	public function contact(): Response
 		{
