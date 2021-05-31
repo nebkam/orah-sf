@@ -20,6 +20,24 @@ class SerbianController extends AbstractController
 		return $this->render('serbian/about_us.html.twig');
 		}
 
+	#[Route('/jabuka-standardna', methods: ['GET'])]
+	public function appleStandard(): Response
+		{
+		return $this->render('serbian/apple_standard.html.twig');
+		}
+
+	#[Route('/jabuka-stubasta', methods: ['GET'])]
+	public function appleColumnar(): Response
+		{
+		return $this->render('serbian/apple_columnar.html.twig');
+		}
+
+	#[Route('/jabuka-autohtone', methods: ['GET'])]
+	public function appleIndigenousVarieties(): Response
+		{
+		return $this->render('serbian/apple_indigenous_varieties.html.twig');
+		}
+
 	#[Route('/sadnja', methods: ['GET'])]
 	public function planting(): Response
 		{
