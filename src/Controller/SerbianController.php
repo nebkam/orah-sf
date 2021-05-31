@@ -19,4 +19,10 @@ class SerbianController extends AbstractController
 		{
 		return $this->render('serbian/about_us.html.twig');
 		}
+
+	#[Route('/kontakt', methods: ['GET'])]
+	public function contact(): Response
+		{
+		return $this->render('serbian/contact.html.twig');
+		}
 	}
