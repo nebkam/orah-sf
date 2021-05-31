@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Питомник ORAH &bull; Добро пожаловать!{% endblock %}
+
+{% block languages %}
+	<li id="rs">
+		<a href="{{ path('app_serbian_index') }}">Srpski</a>
+	</li>
+	<li id="hu">
+		<a href="/index.hu.php">Magyar</a>
+	</li>
+	<li id="en">
+		<a href="/index.en.php">English</a>
+	</li>
+	<li id="de">
+		<a href="/index.de.php">Deutsch</a>
+	</li>
+{% endblock %}
+
+{% block nav %}
+	<li id="oNama">
+		<a href="{{ path('app_russian_aboutus') }}">О нас</a>
+	</li>
+	{# TODO other items #}
+{% endblock %}

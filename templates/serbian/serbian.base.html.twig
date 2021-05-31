@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block languages %}
+	<li id="ru">
+		<a href="{{ path('app_russian_index') }}">По-русски</a>
+	</li>
+	<li id="hu">
+		<a href="/index.hu.php">Magyar</a>
+	</li>
+	<li id="en">
+		<a href="/index.en.php">English</a>
+	</li>
+	<li id="de">
+		<a href="/index.de.php">Deutsch</a>
+	</li>
+{% endblock %}
+
+{% block nav %}
+	<li id="oNama">
+		<a href="{{ path('app_serbian_aboutus') }}">O nama</a>
+	</li>
+	<li id="sorte" class="hasSub">
+		<a href="#">Sortimenti</a>
+		<ul class="sub">
+			<li>
+				<a href="/jabuka-standardna.php">Standardna jabuka</a>
+			</li>
+			<li>
+				<a href="/jabuka-stubasta.php">Stubasta jabuka</a>
+			</li>
+			<li>
+				<a href="/jabuka-autohtone.php">Autohtone sorte jabuke</a>
+			</li>
+			<li>
+				<a href="/kruska.php">Kruška</a>
+			</li>
+			<li>
+				<a href="/dunja-musmula.php">Dunja i mušmula</a>
+			</li>
+			<li>
+				<a href="/breskva-nektarina.php">Breskva i nektarina</a>
+			</li>
+			<li>
+				<a href="/kajsija.php">Kajsija</a>
+			</li>
+			<li>
+				<a href="/sljiva.php">Šljiva</a>
+			</li>
+			<li>
+				<a href="/tresnja-visnja.php">Trešnja i višnja</a>
+			</li>
+			<li>
+				<a href="/orah-leska-badem.php">Orah, leska i badem</a>
+			</li>
+			<li>
+				<a href="/dren.php">Dren</a>
+			</li>
+			<li>
+				<a href="/ribizla-josta-ogrozd.php">Ribizla, josta i ogrozd</a>
+			</li>
+			<li>
+				<a href="/dud.php">Dud</a>
+			</li>
+			<li>
+				<a href="/stubaste-i-patuljaste-forme.php">Stubaste i patuljaste forme</a>
+			</li>
+		</ul>
+	</li>
+	<li id="agroTehnika" class="hasSub">
+		<a href="#">Agrotehnika</a>
+		<ul class="sub">
+			<li>
+				<a href="/sadnja.php">Sadnja</a>
+			</li>
+			<li>
+				<a href="/zastita.php">Zaštita sadnica</a>
+			</li>
+			<li>
+				<a href="/slike.php">Galerija slika</a>
+			</li>
+		</ul>
+	</li>
+	<li id="prodaja" class="hasSub">
+		<a href="#">Prodaja</a>
+		<ul class="sub">
+			<li>
+				<a href="/posta.php">Narudžbina poštom</a>
+			</li>
+			<li>
+				<a href="/email.php">Online narudžbina</a>
+			</li>
+		</ul>
+	</li>
+	<li id="kontakt">
+		<a href="/kontakt.php">Kontakt</a>
+	</li>
+{% endblock %}
