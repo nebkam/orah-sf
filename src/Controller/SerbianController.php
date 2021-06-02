@@ -9,6 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SerbianController extends AbstractController
 	{
+	public function __construct(
+		private string $projectDir
+	)
+		{
+		}
+
 	#[Route('/', methods: ['GET'])]
 	public function index(): Response
 		{
@@ -120,9 +126,10 @@ class SerbianController extends AbstractController
 	#[Route('/slike', methods: ['GET'])]
 	public function gallery(): Response
 		{
-		$thumbnails = self::getFilenames('gfx/photo/mini');
-		$large = self::getFilenames('gfx/photo/large');
-		$filenames = array_intersect($thumbnails, $large);
+		$publicDir  = $this->projectDir . '/public';
+		$thumbnails = self::getFilenames($publicDir . '/gfx/photo/mini');
+		$large      = self::getFilenames($publicDir . '/gfx/photo/large');
+		$filenames  = array_intersect($thumbnails, $large);
 
 		return $this->render('serbian/gallery.html.twig', ['filenames' => $filenames]);
 		}
