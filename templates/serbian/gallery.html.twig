@@ -1,0 +1,21 @@
+{% extends 'serbian/serbian.base.html.twig' %}
+
+{% block title %}Rasadnik ORAH &bull; Galerija slika{% endblock %}
+
+{% block main_content %}
+	<div id="content" class="slike">
+		<ul>
+			{% for filename in filenames %}
+				<li>
+					<div class="thumb fancybox">
+						<a href="/gfx/photo/large/{{ filename }}" target="_blank" rel="gallery">
+							<img src="/gfx/photo/mini/{{ filename }}" alt=""/>
+						</a>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+		<div style="clear:both"></div>
+		<a class="toVrh soft" href="#vrh">Vrh strane</a>
+	</div><!--#content-->
+{% endblock %}
