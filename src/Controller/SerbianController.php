@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use DirectoryIterator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -127,8 +126,8 @@ class SerbianController extends AbstractController
 	public function gallery(): Response
 		{
 		$publicDir  = $this->projectDir . '/public';
-		$thumbnails = self::getFilenames($publicDir . '/gfx/photo/mini');
-		$large      = self::getFilenames($publicDir . '/gfx/photo/large');
+		$thumbnails = Helper::getFilenames($publicDir . '/gfx/photo/mini');
+		$large      = Helper::getFilenames($publicDir . '/gfx/photo/large');
 		$filenames  = array_intersect($thumbnails, $large);
 
 		return $this->render('serbian/gallery.html.twig', ['filenames' => $filenames]);
@@ -150,21 +149,5 @@ class SerbianController extends AbstractController
 	public function contact(): Response
 		{
 		return $this->render('serbian/contact.html.twig');
-		}
-
-	private static function getFilenames(string $path): array
-		{
-		$filenames = [];
-		foreach (new DirectoryIterator($path) as $iterator)
-			{
-			/** @var DirectoryIterator $iterator */
-			if ($iterator->isDir() || $iterator->isDot())
-				{
-				continue;
-				}
-			$filenames[] = $iterator->getFilename();
-			}
-
-		return $filenames;
 		}
 	}

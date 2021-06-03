@@ -21,5 +21,79 @@
 	<li id="oNama">
 		<a href="{{ path('app_russian_aboutus') }}">О нас</a>
 	</li>
-	{# TODO other items #}
+	<li id="sorte" class="hasSub">
+		<a href="#">Сортиментов</a>
+		<ul class="sub">
+			<li>
+				<a href="{{ path('app_russian_applestandard') }}">Стандартное яблоко</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_applecolumnar') }}">Яблоко соломы</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_appleindigenousvarieties') }}">Автохтонные сорта яблоко</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_pear') }}">Груша</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_quincemedlar') }}">Айва и мушмула</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_peachnectarine') }}">Персик и нектарины</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_apricot') }}">Абрикос</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_plum') }}">Слива</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_cherrysourcherry') }}">Вишня и черешня</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_walnuthazelnutalmond') }}">Орех, фундук и миндаль</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_cornel') }}">Кизил</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_currantgooseberryjost') }}">Смородины, крыжовник</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_mulberry') }}">Шелковица</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_columnaranddwarfforms') }}">Формы стерни и карлики</a>
+			</li>
+		</ul>
+	</li>
+	<li id="agroTehnika" class="hasSub">
+		<a href="#">Агротехника</a>
+		<ul class="sub">
+			<li>
+				<a href="{{ path('app_russian_planting') }}">Насаждение</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_protection') }}">Защита саженцев</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_gallery') }}">Фотогалерея</a>
+			</li>
+		</ul>
+	</li>
+	<li id="prodaja" class="hasSub">
+		<a href="#">Продажа</a>
+		<ul class="sub">
+			<li>
+				<a href="{{ path('app_russian_mail') }}">Заказ по почте</a>
+			</li>
+			<li>
+				<a href="{{ path('app_russian_email') }}">Заказы через Интернет</a>
+			</li>
+		</ul>
+	</li>
+	<li id="kontakt">
+		<a href="{{ path('app_russian_contact') }}">Контакт</a>
+	</li>
 {% endblock %}
