@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block languages %}
+	<li id="rs">
+		<a href="{{ path('app_serbian_index') }}">Srpski</a>
+	</li>
+	<li id="ru">
+		<a href="{{ path('app_russian_index') }}">По-русски</a>
+	</li>
+	<li id="en">
+		<a href="{{ path('app_english_aboutus') }}">English</a>
+	</li>
+	<li id="hu">
+		<a href="{{ path('app_hungarian_aboutus') }}">Magyar</a>
+	</li>
+{% endblock %}
