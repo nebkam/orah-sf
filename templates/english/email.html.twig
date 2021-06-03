@@ -1,41 +1,39 @@
 {% extends 'english/english.base.html.twig' %}
 
-{% block title %}Rasadnik ORAH &bull; Online naručivanje sadnica{% endblock %}
-
 {% block main_content %}
 	<div id="content" class="posta">
 		<p class="paraM">
-			olimo Vas da popunite sledeći formular, na osnovu kog će Vas naša služba prodaje kontaktirati
-			i definisati porudžbinu, prema vrsti i broju sadnica koje imamo u prodaji.
+			Please,fill-in the following form and you will be contacted by our sales pesonnel with whom you
+			may specify all the purchase details.
 		</p>
 		<form>
-			<label>Vaše ime i prezime
-				<input id="ime" name="ime" type="text" tabindex="1" />
+			<label>Name and Surname
+				<input id="ime" name="ime" type="text" tabindex="1"/>
 			</label>
-			<label>Vaša adresa
-				<input id="adresa" name="adresa" type="text" tabindex="2" />
+			<label>Address
+				<input id="adresa" name="adresa" type="text" tabindex="2"/>
 			</label>
-			<label>Mesto
-				<input id="mesto" name="mesto" type="text" tabindex="3" />
+			<label>City
+				<input id="mesto" name="mesto" type="text" tabindex="3"/>
 			</label>
-			<label>Poštanski broj
-				<input id="pbroj" name="pbroj" type="text" tabindex="4" />
+			<label>Post Office Number
+				<input id="pbroj" name="pbroj" type="text" tabindex="4"/>
 			</label>
-			<label>Država
-				<input id="drzava" name="drzava" type="text" tabindex="5" />
+			<label>Country
+				<input id="drzava" name="drzava" type="text" tabindex="5"/>
 			</label>
 			<label>Email
-				<input id="email" name="email" type="text" tabindex="6" />
+				<input id="email" name="email" type="text" tabindex="6"/>
 			</label>
-			<label>Telefon
-				<input id="tel" name="tel" type="text" tabindex="7" />
+			<label>Phone
+				<input id="tel" name="tel" type="text" tabindex="7"/>
 			</label>
-			<label>Ovde upišite vrstu i broj sadnica za koje ste zainteresovani iz kataloga.
-				<br />Sve vaše sugestije i pitanja su dobrodošla.
+			<label>Catalogue number and quantity required should be noted in this field.
+				<br/>Should you have any questions or suggestions do not hesitate to contact us.
 				<textarea tabindex="8" rows="5" cols="40"></textarea>
 			</label>
-			<input type="submit" tabindex="9" value="Pošalji" />
+			<input type="submit" tabindex="9" value="Send"/>
 		</form>
-		<a class="toVrh soft" href="#vrh" title="Vrh strane">&nbsp;</a>
-	</div>
+		<a class="toVrh soft" href="#vrh" title="Top">&nbsp;</a>
+	</div><!--#content-->
 {% endblock %}

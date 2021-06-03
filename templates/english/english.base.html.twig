@@ -1,97 +1,97 @@
 {% extends 'base.html.twig' %}
 
 {% block languages %}
+	<li id="rs">
+		<a href="{{ path('app_serbian_index') }}">Srpski</a>
+	</li>
 	<li id="ru">
 		<a href="{{ path('app_russian_index') }}">По-русски</a>
 	</li>
-	<li id="hu">
-		<a href="/index.hu.php">Magyar</a>
-	</li>
-	<li id="en">
-		<a href="/index.en.php">English</a>
-	</li>
 	<li id="de">
 		<a href="/index.de.php">Deutsch</a>
+	</li>
+	<li id="hu">
+		<a href="/index.hu.php">Magyar</a>
 	</li>
 {% endblock %}
 
 {% block nav %}
 	<li id="oNama">
-		<a href="{{ path('app_serbian_aboutus') }}">O nama</a>
+		<a href="{{ path('app_english_aboutus') }}">About Us</a>
 	</li>
 	<li id="sorte" class="hasSub">
-		<a href="#">Sortimenti</a>
+		<a href="#">Sortiments</a>
 		<ul class="sub">
 			<li>
-				<a href="{{ path('app_serbian_applestandard') }}">Standardna jabuka</a>
+				<a href="{{ path('app_english_applestandard') }}">Standard Apple</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_applecolumnar') }}">Stubasta jabuka</a>
+				<a href="{{ path('app_english_applecolumnar') }}">Columnar Apple</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_appleindigenousvarieties') }}">Autohtone sorte jabuke</a>
+				<a href="{{ path('app_english_appleindigenousvarieties') }}">Indigenous Apple Varieties</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_pear') }}">Kruška</a>
+				<a href="{{ path('app_english_pear') }}">Pear</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_quincemedlar') }}">Dunja i mušmula</a>
+				<a href="{{ path('app_english_quincemedlar') }}">Quince &amp; Medlar</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_peachnectarine') }}">Breskva i nektarina</a>
+				<a href="{{ path('app_english_peachnectarine') }}">Peach &amp; Nectarine</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_apricot') }}">Kajsija</a>
+				<a href="{{ path('app_english_apricot') }}">Apricot</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_plum') }}">Šljiva</a>
+				<a href="{{ path('app_english_plum') }}">Plum</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_cherrysourcherry') }}">Trešnja i višnja</a>
+				<a href="{{ path('app_english_cherrysourcherry') }}">Cherry &amp; Sour Cherry</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_walnuthazelnutalmond') }}">Orah, leska i badem</a>
+				<a href="{{ path('app_english_walnuthazelnutalmond') }}">Walnut, Hazelnut &amp; Almond</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_cornel') }}">Dren</a>
+				<a href="{{ path('app_english_cornel') }}">Cornel</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_currantgooseberryjost') }}">Ribizla, josta i ogrozd</a>
+				<a href="{{ path('app_english_currantgooseberryjost') }}">Currant, Gooseberry &amp; Jost</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_mulberry') }}">Dud</a>
+				<a href="{{ path('app_english_mulberry') }}">Mulberry</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_columnaranddwarfforms') }}">Stubaste i patuljaste forme</a>
+				<a href="{{ path('app_english_columnaranddwarfforms') }}">Columnar &amp; Dwarf Forms</a>
 			</li>
 		</ul>
 	</li>
 	<li id="agroTehnika" class="hasSub">
-		<a href="#">Agrotehnika</a>
+		<a href="#">Agrotechnics</a>
 		<ul class="sub">
 			<li>
-				<a href="{{ path('app_serbian_planting') }}">Sadnja</a>
+				<a href="{{ path('app_english_planting') }}">Planting</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_protection') }}">Zaštita sadnica</a>
+				<a href="{{ path('app_english_protection') }}">Protection of Seedlings</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_gallery') }}">Galerija slika</a>
+				<a href="{{ path('app_english_gallery') }}">Photo Gallery</a>
 			</li>
 		</ul>
 	</li>
 	<li id="prodaja" class="hasSub">
-		<a href="#">Prodaja</a>
+		<a href="#">Buy</a>
 		<ul class="sub">
 			<li>
-				<a href="{{ path('app_serbian_mail') }}">Narudžbina poštom</a>
+				<a href="{{ path('app_english_mail') }}">Order by Mail</a>
 			</li>
 			<li>
-				<a href="{{ path('app_serbian_email') }}">Online narudžbina</a>
+				<a href="{{ path('app_english_email') }}">Order Online</a>
 			</li>
 		</ul>
 	</li>
 	<li id="kontakt">
-		<a href="{{ path('app_serbian_contact') }}">Kontakt</a>
+		<a href="{{ path('app_english_contact') }}">Contact</a>
 	</li>
 {% endblock %}
